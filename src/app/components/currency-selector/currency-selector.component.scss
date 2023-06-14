@@ -1,0 +1,25 @@
+.currency-selector {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+
+    input,
+    select {
+        border: 2px solid lightgrey;
+        padding: 8px;
+        font-size: 15px;
+        border-radius: 8px;
+
+        &:focus-visible {
+            border-color: #CDA4DE;
+            box-shadow: unset;
+            text-decoration: unset;
+            outline: unset;
+        }
+
+        &:disabled {
+            background: unset;
+        }
+    }
+}

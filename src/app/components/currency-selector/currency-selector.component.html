@@ -1,0 +1,15 @@
+<div class="currency-selector">
+  <select [(ngModel)]="selectedCurrency1" (change)="updateAmount()">
+    <option *ngFor="let rate of exchangeRates" [value]="rate.cc">{{ rate.cc }}</option>
+  </select>
+  <input type="number" [(ngModel)]="amount1" (input)="updateAmount()" min="1" />
+  <input type="text" [(ngModel)]="result1" [disabled]="true" />
+</div>
+<div class="currency-selector">
+  <select [(ngModel)]="selectedCurrency2" (change)="updateAmount()">
+    <option *ngFor="let rate of exchangeRates" [value]="rate.cc">{{ rate.cc }}</option>
+  </select>
+  <input type="number" [(ngModel)]="amount2" (input)="updateAmount()" min="1" />
+  <input type="text" [(ngModel)]="result2" [disabled]="true" />
+</div>
+

@@ -1,0 +1,10 @@
+<div class="currency-rates" *ngIf="exchangeRates.length > 0">
+    <ul>
+        <ng-container *ngFor="let rate of exchangeRates">
+            <li>
+                <span>{{ rate.cc }}: </span>
+                <span>{{ rate.rate.toFixed(2) }}</span>
+            </li>
+        </ng-container>
+    </ul>
+</div>

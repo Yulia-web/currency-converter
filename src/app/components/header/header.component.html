@@ -1,0 +1,17 @@
+<header class="header">
+    <img src="./assets/logo.png" alt="Logo" width="50" height="50">
+    <div class="currency-rates" *ngIf="exchangeRates.length > 0">
+      <ul>
+        <ng-container *ngFor="let rate of exchangeRates">
+          <li *ngIf="rate.cc === 'USD' || rate.cc === 'EUR'">
+            <span>{{ rate.cc }}: </span>
+            <span>{{ rate.rate.toFixed(2) }}</span>
+          </li>
+        </ng-container>
+      </ul>
+    </div>
+    <div class="loading" *ngIf="exchangeRates.length === 0">
+      <p>Loading...</p>
+    </div>
+</header>
+  

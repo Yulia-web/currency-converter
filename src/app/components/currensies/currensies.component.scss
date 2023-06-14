@@ -1,0 +1,18 @@
+.currency-rates {
+    ul {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        gap: 20px;
+        background-color: #CDA4DE;
+        padding: 20px;
+        border-radius: 15px;
+        color: white;
+        font-weight: 400;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+}
